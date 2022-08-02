@@ -1,0 +1,447 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,300&family=Roboto:ital,wght@0,100;1,100;1,400&display=swap');
+
+.logo-img{
+    height: 4rem;
+    width: 8rem;
+}
+*,
+::after,
+::before{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+:active,
+:hover,
+:focus{
+    outline: 0 !important;
+    outline-offset:0 ;
+}
+a,
+a:hover{
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(241, 20, 57) !important;
+}
+
+ul,ol{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+::-webkit-scrollbar{
+    width: 0.625rem;
+}
+::-webkit-scrollbar-track{
+    background-color: whitesmoke;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(195, 25, 25, 0.883);
+}
+/*custome css design*/
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: brown;
+}
+h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: brown;
+    line-height: 3rem;
+}
+h4{
+    color: brown;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+h5{
+    color: brown;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+p{
+    font-size: 1rem;
+    color: rgb(158, 34, 7);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+
+}
+.main-btn{
+   background-color: rgb(236, 222, 222);
+   border-radius: 4px;
+   transition: all 0.3s;
+   padding: .5rem;
+    
+}
+.main-btn:hover{
+    color: black;
+    background-color:rgba(232, 65, 65, 0.883) ;
+    
+}
+
+
+.white-btn{
+    padding: .652rem 1.875rem;
+    line-height: 25px;
+    background-color: rgb(34, 31, 31);
+    border: 1px solid whitesmoke;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px -1px rgb(0 0 0 /19%);
+    transition: all .4s ease-out 0s;
+}
+.white-btn:hover{
+    background-color: transparent;
+    color: rgba(232, 65, 65, 0.883);
+    border-color: rgba(232, 65, 65, 0.883);
+}
+.wrapper{
+    padding-top: 8.25rem;
+    padding-bottom: 8.25rem;
+}
+.text-content{
+    width: 70%;
+    margin: auto;
+}
+.counter-section h2,
+.testimonial-section h2,
+.book-food-text h2{
+    color: white;
+}
+
+/*header start*/
+.navigation-warp .nav-item{
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+}
+.navbar-toggler:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
+.navigation-warp .main-btn{
+    padding: 0.4rem 1.3rem;
+    box-shadow: none;
+    margin-left: .625rem;
+}
+.nav-link{
+font-size: large;
+color: orange;
+text-transform: capitalize;
+letter-spacing: 1px;
+background-color: yellowgreen;
+border-radius: 6px;
+transition: all 0.3s;
+}
+.navigation-warp .main-btn{
+    padding: .4rem 1.4rem;
+    box-shadow: none;
+    margin-left: .6rem;
+}
+.navigation-warp{
+    position: fixed;
+}
+.navigation-warp.scroll-on{
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0.125rem 0.175rem 0 rgb(0 0 0 0.09);
+    background-color: rgb(248, 244, 237);
+    transition: all 0.5s ease-in-out 0s;
+}
+/*header end*/
+
+/*banner disign start*/
+.top-banner{
+    width: 100%;
+    background-image: url(img/bg-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    padding: 16rem 0 9rem;
+}
+/*banner disign end*/
+
+/*count section star*/
+.counter-section{
+    background-color: rgb(237, 53, 53);
+    padding: 2.5rem 0;
+}
+.counter-section p{
+    color:whitesmoke;
+    text-transform: uppercase;
+}
+/*count section end*/
+
+/*about section start*/
+.about-section{
+    background-color: aliceblue;
+}
+.about-section .card,
+.about-section .card img{
+    border-radius: .6rem;
+}
+.about-section .text-sec{
+padding-left: 2rem;
+}
+.food-type{
+    padding-top: 3.4rem;
+    margin-top: 30px;
+}
+.food-type ul li{
+    font-size: 1rem;
+    color: rgb(37, 111, 111);
+    line-height: 32px;
+    margin-left: 30px;
+    position: relative;
+}
+.food-type ul li::before{
+    position: absolute;
+    left: -2.1875rem;
+    color: rgb(237, 53, 53);
+    font-size: 1.25rem;
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+
+}
+.story-section{
+    width: 100%;
+    height: 28.5rem;
+    background-image: url(img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+    text-align: center;
+}
+.story-section h2{
+    color: rgb(247, 4, 4);
+}
+.story-section p{
+    color: orange;
+}
+/*about section end*/
+
+/*food secton start*/
+.exolore-foods .row .card .c{
+    height: 10rem;
+    width: 22rem;
+}
+.exolore-foods .card{
+    border: none;
+    background-color: transparent;
+    border-radius: 0.6rem;
+}
+.exolore-foods .card img{
+    border-radius: 0.6rem;
+    object-fit: cover;
+}
+.exolore-foods .card span{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(241, 20, 57);
+    border-bottom: 0.06 solid wheat;
+}
+.exolore-foods .card span del{
+    color: gray;
+    margin-left: 0.5rem;
+}
+/*food secton end*/
+
+/*testimonial start*/
+.testimonial-section{
+    background-color: rgb(241, 20, 57);
+}
+.testimonial-section .carousel-item{
+    margin-top: 3rem;
+    padding: 10rem 3rem;
+    background-color: aliceblue;
+    border-radius: 0.9rem;
+    text-align: center;
+
+}
+.testimonial-section .carousel-caption img{
+    max-width: 8rem;
+    border-radius: 50%;
+    padding: 0.3rem;
+}
+.testimonial-section .carousel-item .carousel-item p{
+font-size: 1.3rem;
+line-height: 2rem;
+padding: 0 11% 0.6rem;
+    
+}
+.testimonial-section .carousel-indicators{
+    bottom: -2.3rem;
+}
+.testimonial-section .carousel-indicators button{
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border-radius: 50%;
+    border: none;
+    margin-right: 1rem;
+    opacity: 0.2;
+}
+.testimonial-section .carousel-indicators button.active{
+    opacity: 1;
+}
+/*testimonial end*/
+
+/*media queary*/
+@media (max-width:991px){
+.text-content{
+    width: 100%;
+}
+.navbar .navbar-brand img{
+    height: 3.9rem;
+}
+.navbar .nav-link{
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 0.978rem;
+    text-align: center;
+}
+.top-banner{
+    padding: 9.3rem 0 9.3rem;
+}
+
+    h1{
+        font-size: 2.8rem;
+    }
+    h2{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .top-banner{
+        padding: 10rem 0 9rem;
+    }
+    .testimonial-section .carousel-item .carousel-item p{
+        padding: 0;
+    }
+   
+}
+/*faq start*/
+
+
+
+.faq h4 span{
+    color: rgb(247, 4, 4);
+}
+/*faq end*/
+
+/*book food*/
+.book-food{
+    width: 100%;
+    background: url(img/bg-1.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 71.95px;
+    padding: 4.2rem 0;
+}
+/*form control*/
+.newsletter{
+    width: 75%;
+    margin: 0 auto;
+}
+.newsletter .form-control{
+    height: 3.25rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    border:0.18rem solid gray;
+    color: black;
+    font-weight: 700;
+
+}
+.newsletter .form-control:hover,
+.newsletter .form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: rgb(241, 20, 57);
+}
+/*footer*/
+.footer{
+    background-color: rgb(241, 20, 57);
+}
+.footer .footer-link{
+    font-size: 1rem;
+    color: aliceblue;
+    padding: 0 1.5rem;
+    text-decoration: none;
+}
+.footer .footer-link:hover{
+    color: aliceblue !important;
+}
+.footer a i{
+    color: aliceblue;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+.footer .row a i:hover{
+    color: rgb(6, 2, 1);
+    transition: all 0.3s;
+}
+.footer .row a:hover{
+    color: black;
+}
+@media (max-width:767px){
+.story-section{
+    height: auto;
+    padding: 3rem 0;
+}
+.testimonial-section .carousel-item{
+    pad: 11rem 3.125rem;
+}
+.newsletter{
+    width: 80%;
+}
+.newsletter .main-btn{
+    width: 100%;
+    margin-top:1rem;
+}
+.footer .footer-link,
+.footer a i{
+padding: 0 0.7rem;
+}
+}
+
+@media (max-width:350px){
+    .testimonial-section .carousel-item{
+        padding: 13rem  3.125rem;
+    }
+}
